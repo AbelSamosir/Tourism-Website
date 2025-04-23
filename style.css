@@ -1,0 +1,143 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Edu SA Beginner';
+    line-height:50px;
+  }
+  
+  #logo{width:80px;
+        height:80px;}
+  
+  #heading{font-size:30px;}
+  
+  header{display:flex;
+        background:linear-gradient(#186bd8 60%,#afe1ee);
+        color:black;}
+  
+  ul{display:flex;
+     position:absolute;
+     right:10px;
+     top:30px;
+     color:black;}
+  
+  li{font-size:15px;
+     padding:10px;} 
+  
+  select{all:unset;}
+  
+  option{color:black;}
+  
+  a{text-decoration:none;color:black;}
+  
+  @media (min-width:769px) {
+    ul{top:0px;
+        }
+    #heading{font-size:50px;}
+    #logo{width:150px;
+         height:150px;}
+    li{font-size:25px;}
+  }
+  
+  #banner{height:600px;
+           background-image:url("bg.png");
+           background-size:contain;
+           background-repeat:no-repeat;
+           background-position:center;
+          }
+  
+  #india{margin-top:5%;
+        background-color:#186bd8;
+        color:white;
+        padding:20px;}
+  
+  #india h3{text-align:center;
+           font-size:40px;
+           }
+  
+  #india p{margin:20px;
+          font-size:25px;
+          text-align:justify;}
+  
+  
+  #explore{margin-top:30px;
+    position:relative;
+         }
+  
+  #explore h3{font-size:40px;
+              position:absolute;
+             text-align:center;
+             left:40%;
+             line-height:40px;}
+  
+  #explore h6{font-size:25px;
+             position:absolute;
+             text-align:center;
+             left:40%;
+             top:70%;}
+  
+  @media (min-width:769px) {
+    #explore h3{font-size:90px;
+                 line-height:90px;
+        }
+    #explore h6{top:75%;}
+  }
+  
+  
+  
+  .eimage{width:100px;
+         height:150px;
+         transition:transform 1s;
+         transform:skewX(20deg);
+        }
+  
+  .eimage1{width:100px;
+           height:150px;
+           position:absolute;
+           right:0;
+           transition:transform 1s;
+           transform:skewX(-20deg);
+        }
+  
+  @media (min-width:769px){
+   .eimage{width:300px;
+           height:200px;}
+    .eimage1{width:300px;
+            height:200px;}
+  }
+  
+  .content{font-size:20px;
+           line-height:23px;
+           font-weight:100;
+           position:fixed;
+           top:20%;
+           left:20%;
+           background:radial-gradient(#186bd8,white);
+           border:3px solid black;
+           color:black;
+           width:60%;
+           height:60%;
+           padding:20px;  
+           opacity:0;
+           z-index:1;}
+  
+  .eimage:hover{transform:skewX(0deg);}
+  .eimage1:hover{transform:skewX(0deg);}
+  
+  
+  @media (min-width:769px) {
+    .content{font-size:35px;
+       line-height:50px;
+        }
+  }
+  
+  .eimage:hover+.content{opacity:1;
+                   border-radius:5px;
+                      }
+  
+  .eimage1:hover+.content{opacity:1;
+                         border-radius:5px;}
+  
+  .right{float:right;}
+  
+  .right:hover+h4{display:block;
+                 }
